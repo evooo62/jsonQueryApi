@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -21,7 +22,7 @@
   <body>
    
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
@@ -82,7 +83,9 @@
           </form>
         </div>
       </div>
-    </nav>
+    </div>
+
+     <!-- Loading -->
     <div id="preLoading" class="position-absolute top-50 start-50 translate-middle">
         <div class="spinner-grow text-muted text-center primary"></div>
         <div class="spinner-grow text-primary"></div>
@@ -93,13 +96,14 @@
         <div class="spinner-grow text-secondary"></div>
         <div class="spinner-grow text-dark"></div>
         <div class="spinner-grow text-light"></div>
-</div>
+    </div>
+
+    <!-- Main -->
     <div class="row "> 
-           <!-- Loading -->
 
     <!-- Left Bar -->
-    <div class="d-flex flex-column flex-shrink-0 bg-light col-md-1" style="width: 4.5rem; height: 90vh;">
-        <br>
+    <div class="col-md-1 ">
+    <div class="d-flex flex-column flex-shrink-0 navbar navbar-light position-fixed " style="width: 4.5rem; height: 90vh;">
         <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
           <li class="nav-item">
             <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
@@ -139,116 +143,45 @@
             </a>
           </li>
         </ul>
-        <div class="dropdown border-top">
-          <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
-          </a>
-          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Main -->
-    <div id="accordion" class="mt-5 accordion col-md-8 "></div>
-    <!-- Right-List -->
-    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white col-md-3">
-       <br>
-        <div class="list-group list-group-flush border-bottom scrollarea">
-          <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small>Wed</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Tues</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Mon</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-    
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Wed</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Tues</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Mon</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Wed</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Tues</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Mon</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Wed</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Tues</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-            <div class="d-flex w-100 align-items-center justify-content-between">
-              <strong class="mb-1">List group item heading</strong>
-              <small class="text-muted">Mon</small>
-            </div>
-            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-          </a>
-        </div>
+        <div class=" border-top ">
+            <a href="https://github.com/evooo62" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none " target="_blank"  >
+              <img src="https://github.com/evooo62.png" alt="evooo62" width="24" height="24" class="rounded-circle">
+            </a>
+            <!-- <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul> -->
+          </div>
       </div>
     </div>
 
+     <!-- Post -->
+    <div id="accordion" class="mt-4 accordion col-md-8 d-flex flex-column align-items-stretch flex-shrink-0">
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark" >
+            <div class="col-md-6 px-0" id="big-post">
+
+              </div>
+          </div>
+
+          <div class="row mb-2" id="cardPost">
+ 
+          </div>
+        
+    </div>
+
+    <!-- Right-List -->
+        <div  class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white col-md-3 mt-4">
+            <div class="list-group list-group-flush border-bottom scrollarea auto" id="right-list">
+      </div>
+    </div>
+    
+
     <script>
-      let allData = [];
+
+      var allData = [];
 
       $(document).ready(function () {
         // sayfa yüklenirken göster
@@ -268,10 +201,48 @@
 
             // tüm makaleleri allData içerisinde tutuk.
             allData = [...response];
+            let top1 = response.splice(0,1);
+            $.each(top1,(key,value)=>{
+                console.log('key1 :>> ', key);
+                console.log('value1 :>> ', value);
+                const bigPostTemplate = `
+                <h1 class="display-4 fst-italic" >  ${value?.title}</h1>
+                    <p class="lead my-3">  ${value?.body}</p>
+                    <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+               
+              
+                `;
+                $("#big-post").append(bigPostTemplate);
+            });
 
+            let topcard = response.splice(0,2);
+            $.each(topcard,(key,value)=>{
+                console.log('keycard :>> ', key);
+                console.log('valuecard :>> ', value);
+              
+                const cardPostTemplate = `
+                <div class="col-md-6" >  
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                 <div class= "row">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary">World</strong>
+                  <h3 class="mb-0">${value?.title}</h3>
+                  <div class="mb-1 text-muted">Nov 12</div>
+                  <p class="card-text mb-auto">${value?.body}</p>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+            </div>
+                
+              </div>
+            </div>
+              
+                `;
+                $("#cardPost").append(cardPostTemplate);
+            });
             // ilk 5 adeti splice methodu ile alırız.
+         
             let top5result = response.splice(0, 5);
-
             // $.each ile JS forEach veya for of kullanımını Jquery ile yapmış olduk.
             $.each(top5result, (key, value) => {
               console.log("key", key);
@@ -281,29 +252,26 @@
               // value object
               // jquery append ile
               const cardTemplate = `
-                               <div class="accordion-item">
-                              <h2 class="accordion-header" id="heading${value?.id}">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${value?.id}" aria-expanded="true" aria-controls="collapse${value?.id}">
-                          ${value?.title}
-                                </button>
-                                  </h2>
-                               <div id="collapse${value?.id}" class="accordion-collapse collapse" aria-labelledby="heading${value?.id}" data-bs-parent="#accordion">
-                              <div class="accordion-body">
-                          ${value?.body}
-                               <a class="btn btn-secondary" href="post-detail.html?id=${value?.id}">Detay<a>
-                            </div>
-                            </div>
-                             </div>`;
+                             
+                             <a onclick="${value?.id}" class=" border border-3 list-group-item list-group-item-action py-3 m-1 lh-tight" aria-current="true">
+                <div class="d-flex w-100 align-items-center justify-content-between ">
+                  <strong class="mb-1">${value?.title}</strong>
+                  
+                </div>
+                <div class="col-10 mb-1 small">${value?.body}</div>
+                </a>
+                             `;
 
               // birden fazla parametreli querysting
               //   <a class="btn btn-secondary" href="post-detail.html?id=${value?.id}&title=${value?.title}&body=${value?.body}">Detay<a>
 
-              $("#accordion").append(cardTemplate);
+              
+              $("#right-list").append(cardTemplate);
             });
 
             // success bitiminde veriler sayfaya basıldıktan sonra gizle
           },
-
+          
           error: function (error) {
             console.log("err", error);
           },
@@ -312,6 +280,11 @@
           $("#preLoading").hide();
         });
       });
+
+      
+      
+      
     </script>
+        
   </body>
 </html>

@@ -1,0 +1,16 @@
+#cardPost p{
+    width:30rem ;
+    overflow: hidden; /* taşanları gizle */
+    white-space: nowrap;
+    text-overflow: ellipsis; /* eğer uzunsa üç nokta koy */
+}
+
+#right-list {
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  #right-list::-webkit-scrollbar {
+    display: none;
+}
